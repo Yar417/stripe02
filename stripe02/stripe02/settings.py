@@ -12,7 +12,7 @@ SECRET_KEY = 'django-insecure-h(2k$3m9^=d)2_m4ii+iak@ic98t@y5@+6cbh8@*sp=-50_74o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['103383.ip-ns.net', '51.77.48.45', 'localhost', '0.0.0.0']
 
 # Application definition
 
@@ -28,6 +28,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -107,6 +108,6 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DOMAIN_URL = 'http://127.0.0.1:8000/'
+DOMAIN_URL = '103383.ip-ns.net'
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51MZiRsK2xJMUSK0vl2g7qQu9JqDWz38ATebhVfcGlTgP0GV9ynicSrrlXCgllk8OWcjrD2qU2SqXbzEj7RVZ3Vfi00mhc8LUcT'
 STRIPE_SECRET_KEY = 'sk_test_51MZiRsK2xJMUSK0v4bERBAF9y3x8DWGaIjqm0FQn1lIKat0HVJ66sfxXNlrFW2om6aUmRZJlTuLFsRSARpoyzkmN00FPfzVqKQ'
